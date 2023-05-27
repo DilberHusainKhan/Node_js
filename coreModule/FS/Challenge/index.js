@@ -29,6 +29,7 @@ fs.renameSync('./Dilber/Bio.txt','./Dilber/MyBio.txt');
 // 6:Now, delete the both the file and folder.
 setTimeout(del,4000);
 function del(){
-    fs.rmSync('./Dilber/MyBio.txt'); //Remove File.
+    // fs.rmSync('./Dilber/MyBio.txt'); //Remove File.
+    fs.unlinkSync('./Dilber/MyBio.txt');
     fs.rmdirSync('Dilber') //Delete
 }
