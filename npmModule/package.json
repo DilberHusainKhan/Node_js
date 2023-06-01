@@ -1,0 +1,14 @@
+{
+  "name": "npmmodule",
+  "version": "1.0.0",
+  "description": "Learning Npm Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dilber Husain Khan",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0"
+  }
+}
