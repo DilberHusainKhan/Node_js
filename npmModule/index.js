@@ -20,6 +20,10 @@ DISK: ${chalk.yellow('70%')}
 
 
 // Email validator using validator module
-const email = 'dilberjmi@gmail.com';
-const res = validator.isEmail(email);
-log(res? chalk.green.inverse(res):chalk.red.inverse(res));
+// const email = 'dilberjmi@gmail.com';
+const arr =['dilber@gmail.com','abc.abc','123@gmail.234','Dilber@gmail'];
+for (let index = 0; index < arr.length; index++) {
+	const email = arr[index];
+	const res = validator.isEmail(email);
+	log(res? chalk.green.inverse(res):chalk.red.inverse(res));
+}
