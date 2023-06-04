@@ -26,4 +26,5 @@ for (let index = 0; index < arr.length; index++) {
 	const email = arr[index];
 	const res = validator.isEmail(email);
 	log(res? chalk.green.inverse(res):chalk.red.inverse(res));
+	log(res? chalk.green.inverse(res):chalk.red.inverse(res));
 }
