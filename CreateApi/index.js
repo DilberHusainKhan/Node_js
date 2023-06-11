@@ -10,7 +10,7 @@ const server =http.createServer((req,res)=>{
     }else if(req.url=='/UserApi'){
         fs.readFile(`${__dirname}/userdata.json`,'UTF-8',(err,data)=>{  
             console.log(data);
-            // res.end(data);
+            // res.end(data); one
             const objData  = JSON.parse(data);
             res.writeHead(404,{'content-type':'text/html'})
             res.end(`<h2>${objData[0].lastName} </h2>`);
