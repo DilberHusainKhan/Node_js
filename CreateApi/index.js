@@ -20,4 +20,5 @@ const server =http.createServer((req,res)=>{
         res.end('<h1>404 Page not found</h1>');
     }
 });
+// server listen
 server.listen(8080);
