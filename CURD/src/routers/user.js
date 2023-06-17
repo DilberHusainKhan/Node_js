@@ -27,5 +27,4 @@ UserRoute.delete('/delete/:id',async(req,res)=>{
     await User.findByIdAndDelete(req.params.id);
     res.send({message:"Delete data sucessfully"});
 })
-
 module.exports = UserRoute;
