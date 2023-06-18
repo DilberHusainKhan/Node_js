@@ -28,5 +28,4 @@ UserRoute.delete('/delete/:id',async(req,res)=>{
     res.send({message:"Delete data sucessfully"});
 })
 // Export the module
-
 module.exports = UserRoute;
