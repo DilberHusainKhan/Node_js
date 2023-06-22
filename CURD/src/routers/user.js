@@ -22,11 +22,11 @@ UserRoute.patch("/patch/:id",async(req,res)=>{
     res.send({message:"Update Sucessfully"});
 });
 
-// 4:Delete from DB
+// 4:Delete from DB we use find by id and delete  
 UserRoute.delete('/delete/:id',async(req,res)=>{
     await User.findByIdAndDelete(req.params.id);
     res.send({message:"Delete data sucessfully"});
 })
-// Export the module for different API in the node
+// Export the module for different API in the node 
 
 module.exports = UserRoute;
