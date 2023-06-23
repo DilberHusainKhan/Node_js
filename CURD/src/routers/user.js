@@ -15,7 +15,7 @@ UserRoute.get('/get', async(req,res)=>{
     res.send(users);
 })
 
-// 3 Update the data in the  DB
+// 3 Update the data in the  DB using patch
 UserRoute.patch("/patch/:id",async(req,res)=>{
     const user =await User.findById(req.params.id);
     await user.updateOne(req.body);
