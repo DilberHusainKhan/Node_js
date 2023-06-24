@@ -9,7 +9,7 @@ UserRoute.post('/post',(req,res)=>{
     res.status(201).send({message:"User Created Sucessfully"});
 })
 
-// 2 Get data  from DB
+// 2 Get data  from DB using get method
 UserRoute.get('/get', async(req,res)=>{
     const users = await User.find();
     res.send(users);
