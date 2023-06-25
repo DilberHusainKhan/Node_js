@@ -2,7 +2,7 @@
 const express = require('express');
 const User = require("../mongoose/model/user");
 const UserRoute = express.Router();
-// 1 Create data in the db
+// 1 Create data in the db using post medthod
 UserRoute.post('/post',(req,res)=>{
     const data = req.body;
     User(data).save();
