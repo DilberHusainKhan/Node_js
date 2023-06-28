@@ -1,4 +1,4 @@
-// Now crerate the Route for just for git 
+// Now crerate the Route for just for git  on the server
 const express = require('express');
 const User = require("../mongoose/model/user");
 const UserRoute = express.Router();
