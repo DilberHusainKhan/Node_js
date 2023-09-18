@@ -25,3 +25,50 @@ console.log(triOu);
 // binary of number
 const Binary =  arr.map(x=> x.toString(2));
 console.log(Binary);
+
+// Filter 
+// find even
+const FltrOutput = arr.filter(x=>x%2===0);
+console.log(FltrOutput);
+
+// find greater than 3
+console.log(arr.filter(x=>x>3));
+
+
+// reduse
+// In  non functional way
+function findSum(arr){
+    let sum = 0;
+    for (let index = 0; index < arr.length; index++) {
+        sum = sum + arr[index];
+    }
+    return sum;
+}
+console.log(findSum(arr));
+
+// In a functional way
+const findSum1 = arr.reduce(function(acc,curr){
+    acc=acc+curr;
+    return acc;
+},0)
+console.log(findSum1);
+
+// Find Max
+function findMax(arr){
+    let max = arr[0];
+    for(let i=0;i<arr.length;i++){
+        if(max<arr[i]){
+            max = arr[i];
+        }
+    }
+    return max;
+}
+console.log(findMax(arr));
+// functional way
+const findMax1 = arr.reduce(function(acc,curr){
+    if(acc<curr){
+        acc = curr;
+    }
+    return acc;
+},0)
+console.log(findMax1);
