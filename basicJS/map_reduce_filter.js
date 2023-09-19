@@ -72,3 +72,12 @@ const findMax1 = arr.reduce(function(acc,curr){
     return acc;
 },0)
 console.log(findMax1);
+
+// List the full Name of person of a given obj 
+const person=[
+    {firstName: "Dilber", lastName : "Khan",age : 24},
+    {firstName: "Humayun", lastName : "Aanwar",age : 25},
+    {firstName: "Aadil", lastName : "Rana",age : 24},
+]
+const fullName = person.map(x=>x.firstName+" "+x.lastName);
+console.log(fullName); 
