@@ -81,3 +81,38 @@ const person=[
 ]
 const fullName = person.map(x=>x.firstName+" "+x.lastName);
 console.log(fullName); 
+
+// --------------------------------------------
+function findUniqueLetter(word) {
+    const charCount = {};
+    for (let i = 0; i < word.length; i++) {
+      const char = word.charAt(i);
+      console.log(char);
+      if (!charCount[char]) {
+        charCount[char] = 1;
+      } else {
+        charCount[char]++;
+      }
+    }
+    console.log(charCount);
+    for (let i = 0; i < word.length; i++) {
+      const char = word.charAt(i);
+      
+      if (charCount[char] === 1) {
+        const indx=word.indexOf(char)
+        return {char,indx};
+      }
+    }
+    return null;
+  }
+  
+  
+  const word = "missing";
+  const uniqueLetter = findUniqueLetter(word);
+  if (uniqueLetter) {
+    console.log("The unique letter is:", uniqueLetter);
+  } else {
+    console.log("No unique letter found in the word.");
+  }
+// ----------------------------
+  
