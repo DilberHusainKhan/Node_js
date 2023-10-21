@@ -6,15 +6,20 @@ data.then(data=>{
 
 const cart = ["Shoes, pants,shorts"];
 const promise =CreateOrder(cart);
+// for sucessful promise
 promise.then(function(orderId){
     console.log(orderId);
 })
-
+// for failure of promise
+.catch(function(err){
+    console.log(err.message);
+})
 
 function CreateOrder(cart){
     const pr = new Promise(function(resolve,reject){
         if(!validateCart(cart)){
-            console.log("Validation Failed");
+            const err = new Error("Validation Failed")
+            // console.log("Validation Failed");
             reject(err);
         }
         const orderId = 12345;
