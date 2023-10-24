@@ -54,6 +54,7 @@ function proceedToPayment(orderId) {
         resolve("Payment sucessfull");
     })
 }
+
 function validateOrder(orderId){
     if(orderId == 0){
         return false;
