@@ -19,3 +19,4 @@ async function handlePromise(){
 }
 
 handlePromise();
+handlePromise().catch(err=>console.log(err));
