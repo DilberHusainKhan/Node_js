@@ -15,8 +15,6 @@ async function handlePromise(){
     catch(err){
         console.log(err);
     }
-
 }
-
 handlePromise();
 handlePromise().catch(err=>console.log(err));
